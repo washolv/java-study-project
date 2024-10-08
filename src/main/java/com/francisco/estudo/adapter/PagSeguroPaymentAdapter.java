@@ -16,4 +16,9 @@ public class PagSeguroPaymentAdapter implements PaymentPort {
     public void payOrder(PaymentData paymentData) {
         logger.info("PagSeguro payOrder");
     }
+
+    @Override
+    public void paymentOrder(PaymentData paymentData) {
+        logger.info("Deprecated method");
+    }
 }

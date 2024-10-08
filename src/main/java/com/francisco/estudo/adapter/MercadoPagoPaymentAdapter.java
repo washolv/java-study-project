@@ -17,4 +17,9 @@ public class MercadoPagoPaymentAdapter implements PaymentPort {
     public void payOrder(PaymentData paymentData) {
         logger.info("Mercado Pago payment");
     }
+
+    @Override
+    public void paymentOrder(PaymentData paymentData) {
+        logger.info("Deprecated method");
+    }
 }
